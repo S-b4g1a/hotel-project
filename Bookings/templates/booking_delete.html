@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Capstone Hotel Booking </title>
+        {% include 'page_header.html' %}
+
+    </head>
+
+    <body>
+        <h1>Booking Deletion Page</h1>
+
+        <a> Are you sure you want to delete this booking? This action cannot be undone. </a>
+        <form method="POST">
+            {% csrf_token %} 
+            <input type="submit" value="Delete Bookings"> 
+        </form>
+
+        <a href="/homepage"> Cancel Delete </a>
+    </body>
+</html>

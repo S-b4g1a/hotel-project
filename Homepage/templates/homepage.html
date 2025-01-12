@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Capstone Hotel Booking </title>
+        
+
+    </head>
+
+    <body>
+        {% include 'page_header.html' %}
+        
+
+        {% if user.is_staff == True %}
+            <a> Admin Functionality: </a> <br>
+            <a href="/hotel_list_staff"> Hotel Management Page </a>
+        {% endif %}
+
+        {% if user.is_authenticated %}
+            
+            <h2> Your Bookings: </h2>
+            {% for booking in bookings %}
+                <div>
+                    <a> Hotel: {{booking.hotel_name}} </a> <br>
+                    <a> Room: {{booking.room_designation}} </a> <br>
+                    <a> Check In: {{booking.check_in}}     9:00</a> <br>
+                    <a> Check Out: {{booking.check_out}}     13:00</a> <br>
+                    <a> Cost: {{booking.total_price}}</a> <br>
+                    <a href='/booking_delete/{{booking.id}}'> Delete this Booking </a>
+                </div>
+            {% endfor %}
+
+        {% endif %}
+
+        
+    </body>
+</html>

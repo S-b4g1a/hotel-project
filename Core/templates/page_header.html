@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="/static/css/base.css">
+    </head>
+
+    <body>
+        <div id="navbar">
+            <ul>
+                <li><a href="/homepage">Capstone Hotel Booking System</a></li>
+                <li><a href="/hotel_list">View Hotels</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="/account/sign_out">Sign Out</a></li>
+                <li><a href="/account/delete"> Delete Account</a></li>
+                {% else %}
+                <li><a href="/account/sign_up">Sign Up</a></li>
+                <li><a href="/account/sign_in">Sign In</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </body>
+</html>

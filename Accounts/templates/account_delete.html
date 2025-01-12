@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Capstone Hotel Booking </title>
+        {% include 'page_header.html' %}
+
+    </head>
+
+    <body>
+        <h1>Sign Up Page</h1>
+
+        <a> Are you sure you want to delete your account? This action cannot be undone. </a>
+        <form method="POST">
+            {% csrf_token %} 
+            <input type="submit" value="Delete Account"> 
+        </form>
+    </body>
+</html>

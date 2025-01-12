@@ -1,0 +1,49 @@
+/* Basic Layout */
+body {
+    text-align:center;
+    margin:0px;
+}
+
+
+/* Top of Page Navbar */
+div#navbar {
+    display:inline-flex;
+    width:90%;
+    height:50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background:#222;
+}
+
+ul {
+    list-style-type:None;
+    display:inline-flex;
+    justify-content:right;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+/* li {
+    float:left;
+} */
+
+li a {
+    display:inline-flex;
+    padding:14px 16px;
+    color:white;
+    font-size:19px;
+    text-align:center;
+    text-decoration:none;
+    justify-self:right;
+}
+
+li a#homepage {
+    justify-self:left;
+}
+
+li a:hover {
+    background-color:#111;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Capstone Hotel Booking </title>
+        {% include 'page_header.html' %}
+
+    </head>
+
+    <body>
+        <h1>Sign In Page</h1>
+
+        {% if page_state == 1 %}
+            <a> You have been Logged In </a>
+        {% elif user.is_authenticated %}
+            <a> You are already Logged In.</a>
+        {% else %}
+            <div class="sign_in">
+                <form method = "POST"> 
+                    {% csrf_token %} 
+                    {{ form }} 
+                    <input type = "submit" value = "Submit"> 
+                </form> 
+            </div>
+        {% endif %}
+
+        <div>
+            {% if page_state == 2 %}
+                <a> Some Fields have been filled incorrectly. </a>
+            {% elif page_state == 3 %}
+                <a> Invalid Username or Password. </a>
+            {% endif %}  
+        </div>
+
+    </body>
+</html>
