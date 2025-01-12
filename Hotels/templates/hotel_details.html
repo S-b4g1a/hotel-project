@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Capstone Hotel Booking </title>
+        {% load static %}
+        <link rel="stylesheet" href="/static/css/hotel_details.css">
+
+    </head>
+
+    <body>
+        {% include 'page_header.html' %}
+        <h1>{{ details.name }}</h1>
+
+        <br> <br>
+
+        Hotel Name: {{details.name}} <br>
+        
+        Hotel Address: {{details.address_line_1}} <br> {{details.address_line_2}} <br> {{details.town_city}} <br> {{details.country}} <br>
+
+        Hotel Description: {{details.description}} <br>
+
+        <h2> Rooms: </h2>
+
+        {% for room in rooms %}
+            <div class="room_details">
+                <a>Room Designation: {{ room.room_designation }}</a> <br>
+                <a>Price per Night: £{{ room.price_per_night }}</a> <br>
+                <a>Bed Layout: {{ room.room_beds }}</a> <br>
+                <a>Room Features: {{ room.room_features }}</a> <br>
+                <a>Room Description: {{room.description}}</a> <br>
+                <a href="/booking_create/{{ details.id }}/{{ room.id }}"> Make a Booking </a> <br> <br>
+            </div>
+        {% endfor %}
+
+        <!-- <a href=""></a> -->
+
+        
+    </body>
+</html>

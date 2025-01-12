@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Available Hotels </title>
+        {% load static %}
+        <link rel="stylesheet" href="/static/css/hotel_list.css">
+        
+    </head>
+
+    <body>
+        {% include 'page_header.html' %}
+        <h1>Hotel List Page</h1>
+
+        {% for x in hotels %}
+            <div class="hotel_details" onclick="location.href='/hotel_details/{{x.id}}';">
+                <div class="hotel_details_name">{{ x.name }}</div>
+                <div class="hotel_details_description">{{ x.description }}</div>
+            </div>
+        {% endfor %}
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Add Room </title>
+
+    </head>
+
+    <body>
+        {% include 'page_header.html' %}
+
+        Creating new room for {{ hotel_name }} <br>
+        
+        <form method="POST">
+            {% csrf_token %} 
+            {{ form }}
+            <input type="submit" value="Add Hotel"> 
+        </form>
+
+        <div>
+            {% if page_state == 2 %}
+                <a> Some Fields have been filled incorrectly.</a>
+            {% endif %}  
+        </div>
+
+    </body>
+</html> 

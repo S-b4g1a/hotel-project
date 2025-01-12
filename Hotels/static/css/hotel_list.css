@@ -1,0 +1,31 @@
+
+div.hotel_details {
+    display:inline-flex;
+    flex-direction:column;
+    align-content: center;
+    overflow:auto;
+    width:45%;
+    height:300px;
+    margin-top:0.5%;
+    margin-bottom:0.5%;
+    margin-left:1%;
+    margin-right:1%;
+    padding:10px;
+    border:black solid 5px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+div.hotel_details_name {
+    display:inline-flex;
+    justify-self: center;
+    text-align:center;
+    font-size:20pt;
+}
+
+div.hotel_details_description {
+    display:inline-flex;
+    text-align:left;
+    font-size:16pt;
+}

@@ -1,0 +1,10 @@
+
+div.hotel_details {
+    display:inline-flex;
+    flex-direction:column;
+    border:black solid 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 1%;
+    text-align: center;
+}

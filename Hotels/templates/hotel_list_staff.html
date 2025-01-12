@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Available Hotels </title>
+        {% load static %}
+        <link rel="stylesheet" href="/static/css/hotel_list_staff.css">
+        
+    </head>
+
+    <body>
+        {% include 'page_header.html' %}
+        <h1>Hotel List Page</h1>
+
+        <div onclick="location.href='/hotel_add';", style="cursor: pointer;"> Add New Hotel </div>
+
+        {% for x in hotels %}
+            <div class="hotel_details">
+                <div>{{ x.name }}</div>
+                <div onclick="location.href='/hotel_details_staff/{{x.id}}';", style="cursor: pointer;"> Edit Hotel </div>
+                <div onclick="location.href='/hotel_delete/{{x.id}}';", style="cursor: pointer;"> Delete Hotel </div>
+            </div>
+        {% endfor %}
+
+    </body>
+</html>
