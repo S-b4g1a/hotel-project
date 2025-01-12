@@ -8,6 +8,8 @@ from django.contrib.auth.models import User
 
 from Accounts.forms import SignInForm, SignUpForm
 
+from django.views.decorators.csrf import csrf_protect
+
 
 def AccountSignUp(request):
     template = loader.get_template("account_sign_up.html")
@@ -45,7 +47,7 @@ def AccountSignUp(request):
 
     return HttpResponse(template.render(context, request))
 
-
+@csrf_protect
 def AccountSignIn(request):
     template = loader.get_template("account_sign_in.html")
     context = {"page_state": 0, "form": SignInForm()}
