@@ -62,7 +62,8 @@ The purpose of this project is to help users navigate their sleeping arrangement
 
 ## ERD diagram
 - This ERD digram show the relationship between the models within the apps 
-![screenshot2025-01-13 145743.png](doc_images "screenshot2025-01-13 145743.png")
+![responsivenes_screenshot](/doc_images/Screenshot%202025-01-13%20145743.png)
+
 
 
 ## Technologies Used
