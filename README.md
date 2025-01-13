@@ -4,7 +4,7 @@ A full-stack hotel booking application built with Django and Python backend, fea
 The purpose of this project is to help users navigate their sleeping arrangements when traveling. Built with simplicity and user experience in mind, the website offers an intuitive platform for travelers to find and book hotels across various locations.
 
 #### Responsive screens 
-
+![responsive screens](/doc_images/responsive.png) 
 
 # Core Purpose
 
