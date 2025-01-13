@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^!8%x0xqgx%945aaz&+e#2lk*j83onbd3sqta1ad^sl9u)9v2!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-sb4g1a-hotelproject-o6sbej6agvk.ws.codeinstitute-ide.net', 'hotel-project189-5b71e758b904.herokuapp.com/',
@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dateutil',
     'Core',
     'Accounts',
     'Bookings',
@@ -88,12 +87,12 @@ WSGI_APPLICATION = 'TestProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
-#}
+# }
 
 DATABASES = {
    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
