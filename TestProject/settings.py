@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'TestProject.wsgi.application'
 #}
 
 DATABASES = {
-   'default': dj_database_url.parse(os.environ.get(" postgresql://neondb_owner:iZ6pACN7kzWJ@ep-muddy-snowflake-a2mlxi2p.eu-central-1.aws.neon.tech/buck_mouth_lure_198653"))
+   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
