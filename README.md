@@ -1,35 +1,35 @@
-#Hotel Booking Website
+# Hotel Booking Website
 A full-stack hotel booking application built with Django and Python backend, featuring a responsive HTML/CSS frontend. The system allows users to browse hotels, manage bookings, and handle user authentication.
 #About
 The purpose of this project is to help users navigate their sleeping arrangements when traveling. Built with simplicity and user experience in mind, the website offers an intuitive platform for travelers to find and book hotels across various locations.
 
-####Responsive screens 
+#### Responsive screens 
 
 
-#Core Purpose
+# Core Purpose
 
 - Simplify the hotel booking process for travelers
 - Provide an easy-to-navigate interface for browsing hotels
 - Enable secure user accounts for booking management
 - Offer administrative capabilities for hotel management
 
-#Key User Features
+# Key User Features
 
 - Browse hotels across multiple locations without an account
 - Create personal accounts to access full booking capabilities
 - View detailed hotel information and availability
 - Manage personal bookings and preferences
 
-#Administrative Features
+# Administrative Features
 
 - Dedicated admin login system
 - Add new hotels to the platform
 - Remove or update existing hotel listings
 - Monitor and manage bookings
 
-#Features
+# Features
 
-###User Authentication
+### User Authentication
 
 - Secure login and registration system
 - User profile management
@@ -37,7 +37,7 @@ The purpose of this project is to help users navigate their sleeping arrangement
 - Separate admin and user access levels
 
 
-##Hotel Management
+## Hotel Management
 
 - Location-based hotel browsing
 - Detailed hotel information pages
@@ -45,7 +45,7 @@ The purpose of this project is to help users navigate their sleeping arrangement
 - Search and filter functionality
 
 
-##Booking Management
+## Booking Management
 
 - Create new hotel bookings
 - View existing bookings
@@ -53,27 +53,27 @@ The purpose of this project is to help users navigate their sleeping arrangement
 - Cancel bookings
 
 
-##Frontend
+## Frontend
 
 - Responsive design that works on desktop and mobile devices
 - Modern and intuitive user interface
 - Interactive booking calendar
 - Hotel room previews and details
 
-##ERD diagram
+## ERD diagram
 - This ERD digram show the relationship between the models within the apps
 
 
 
-##Technologies Used
+## Technologies Used
 
-###Frontend:
+### Frontend:
 
 - HTML5
 - CSS3
 
 
-###Backend:
+### Backend:
 
 - Python
 - Django Framework
@@ -81,7 +81,7 @@ The purpose of this project is to help users navigate their sleeping arrangement
 - PostgreSQL (production)
 
 
-###Deployment:
+### Deployment:
 
 - Heroku
 - Gunicorn
@@ -101,7 +101,7 @@ https://jigsaw.w3.org/css-validator/
 
 - All tests recieved adequite scrores resulting in them being able to past the validator and any inconsistencys that were bought up had been delt with at the appropriate time.
 
-#Responsiveness
+# Responsiveness
 - All pages within this site have been tested using Devtools, to ensure that the site is fully responsive on all devices, the main navigation feature remains at the top of the the screen on all devices ensuring an easy to navigate system, so the user doesnt have to constantly change what they are used to using. When using a smaller screen on the on the view hotel tab all the content has been given a scroll bar on the side to ensure the user is getting all the information.
 
 ##Libraries and Programs used
@@ -132,6 +132,7 @@ https://jigsaw.w3.org/css-validator/
 13. On the Dashboard, select the Deploy tab, and under the Deployment Method heading, select the
 GitHub icon to connect your Heroku project to your GitHub repo. Enter your repository name in the text input, and click Search, and then when your repo appears, click Connect.
 14. Under the Manual deploy section, click Deploy Branch. You should receive this message - 'Your app was successfully deployed". Click view to see the app running in the browser.
- #Credits
+
+ # Credits
  - Through out this process I was assissted by my mentor Paul and John the coding coach, both have assisted me when it comes to the struggles I have had when coding, there support has been key in finishing my project.
  - I would also like to thank an external person Lewis Mieakin who advised me through my whole journey.
