@@ -143,7 +143,7 @@ GitHub icon to connect your Heroku project to your GitHub repo. Enter your repos
  # Credits
  - Through out this process I was assissted by my mentor Paul and John the coding coach, both have assisted me when it comes to the struggles I have had when coding, there support has been key in finishing my project.
  - I would also like to thank an external person Lewis Mieakin who advised me through my whole journey.
- - I used AI to help me visualise my code and ideas
+ - I used AI to help me visualise my code and ideas.
 
  # Achnowledgements
  - I would like to thank John Rearden on helping in my last day for the project as I experienced significant troubles before hand and had to restart.
