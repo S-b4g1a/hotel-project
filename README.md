@@ -61,8 +61,8 @@ The purpose of this project is to help users navigate their sleeping arrangement
 - Hotel room previews and details
 
 ## ERD diagram
-- This ERD digram show the relationship between the models within the apps
-
+- This ERD digram show the relationship between the models within the apps 
+![screenshot2025-01-13 145743.png](doc_images "screenshot2025-01-13 145743.png")
 
 
 ## Technologies Used
