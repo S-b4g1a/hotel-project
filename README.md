@@ -67,6 +67,11 @@ The purpose of this project is to help users navigate their sleeping arrangement
 ## Wireframes
 ![wireframes](/doc_images/wireframes.png)
 
+## Screeshots
+- These screenshots show what the page looks like in contrast to the wireframes
+![screenshot_home_page](/doc_images/screeshot1.png)
+![screenshot_hotels_view](/doc_images/screenshot2.png)
+
 ## Technologies Used
 
 ### Frontend:
