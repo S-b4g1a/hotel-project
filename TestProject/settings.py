@@ -11,6 +11,12 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+import dj_database_url
+
+if os.path.isfile("env.py"):
+   import env
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^!8%x0xqgx%945aaz&+e#2lk*j83onbd3sqta1ad^sl9u)9v2!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-sb4g1a-hotelproject-o6sbej6agvk.ws.codeinstitute-ide.net', 'hotel-project189-5b71e758b904.herokuapp.com/']
 CSRF_TRUSTED_ORIGINS = ['https://8000-sb4g1a-hotelproject-o6sbej6agvk.ws.codeinstitute-ide.net']
@@ -79,11 +85,15 @@ WSGI_APPLICATION = 'TestProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+   'default': dj_database_url.parse(os.environ.get(" postgresql://neondb_owner:iZ6pACN7kzWJ@ep-muddy-snowflake-a2mlxi2p.eu-central-1.aws.neon.tech/buck_mouth_lure_198653"))
 }
 
 
